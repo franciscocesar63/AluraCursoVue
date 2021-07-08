@@ -1,12 +1,9 @@
-console.log("Fui carregado de um arquivo externo");
-
 var titulo = document.querySelector(".titulo");
-
 titulo.textContent = "Aparecida Nutricionista";
 
 var pacientes = document.querySelectorAll(".paciente");
 
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < pacientes.length; i++) {
 
     var paciente = pacientes[i];
 
@@ -35,7 +32,7 @@ for (var i = 0; i < 5; i++) {
         paciente.classList.add("paciente-invalido");
     }
 
-    if (alturaEhValida && pesoEhValido) {
+    if (pesoEhValido && alturaEhValida) {
         var imc = peso / (altura * altura);
         tdImc.textContent = imc.toFixed(2);
     }
