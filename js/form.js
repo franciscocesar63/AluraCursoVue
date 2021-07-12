@@ -15,7 +15,7 @@ botaoAdicionar.addEventListener("click", function(event) {
 
         return;
     }
-
+ 
     var tabela = document.querySelector("#tabela-pacientes");
 
     tabela.appendChild(pacienteTr);
